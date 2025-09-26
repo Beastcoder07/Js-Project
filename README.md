@@ -1,3 +1,4 @@
 # VIEW PAGE
 
-https://beastcoder07.github.io/JavascriptProject-2ndsem
+https://beastcoder07.github.io/Js-Project-2ndsem
+
