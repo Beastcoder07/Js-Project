@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+#coin-img {
+  width: 10rem;
+
+  animation: flip 1s;
+}
+#coinResult {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #000000;
+  background-color: #e3bc30;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes flip {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.result {
+  display: none;
+  font-size: 20px;
+  color: rgb(3, 116, 3);
+  font-weight: 600;
+}
+.exit {
+  position: absolute;
+  bottom: 2rem;
+  right: 5rem;
+  cursor: pointer;
+  height: 2.8rem;
+  width: 5rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(224, 163, 9);
+  border: none;
+  text-transform: capitalize;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 180px;
+  }
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  body {
+    width: 100%;
+    height: 95vh;
+  }
+  .button {
+    width: 8rem;
+    height: 3.5rem;
+    margin-top: 20px;
+  }
+
+  .exit {
+    width: 4.5rem;
+    height: 3rem;
+    bottom: 0rem;
+    right: 2rem;
+  }
+}
